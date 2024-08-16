@@ -1,0 +1,50 @@
+$default-font-color: #3b3b3b;
+$background-color: rgb(15, 15, 15);
+$container-bgcolor: #f2f2f2;
+$container-bordercolor: #000;
+$textbox_bordercolor: rgb(100, 150, 151);
+$textbox-color: rgb(97, 188, 224);
+$button-textcolor: rgb(231, 231, 231);
+$button-hovercolor: rgb(59, 132, 184);
+$add-button-color: green;
+$clear-button-color: red;
+
+
+//for later, add a button that controls which sections to use, this enables a light or dark mode for the webpage
+@mixin mp($size) {
+    @media only screen and (min-width: $size) {
+        @content;
+    }
+}
+
+* {
+    margin: 7;
+    padding: 0;
+    box-sizing: 0;
+}
+
+html,
+body {
+    font-size: 16px;
+    font-family: "Noto Serif Malayalam", serif;
+    color: rgb(216, 214, 214);
+    width: 100%;
+    min-height: 100%;
+    //@include mp(768px) {
+    //    font-size: 22px;
+    //}
+}
+
+body {
+    padding: 30px;
+    background-color: $background-color;
+}
+
+section {
+    //background-color: $container-bgcolor;
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+    //border: 2px solid $container-bordercolor;
+    //border-radius: 10px;
+}
