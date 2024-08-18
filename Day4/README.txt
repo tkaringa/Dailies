@@ -1,0 +1,1 @@
+Hello Universe is a simple way for me to practice learning new languages and old languages in a consolidated manner. I researched each language throughout the day, and implemented them in my spare time.
